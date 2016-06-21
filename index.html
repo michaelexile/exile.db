@@ -4,14 +4,22 @@
   <head>
   <style>
 
-  div.redbox {
-       width: 200px;
+
+  input{display:none}
+  .redbox {
+       width: 500px;
        height: 200px;
-       background: red;
+       background-image: url("images/MaskRENDER.png"),url("images/gearBG.png");
+       background-size: contain, cover;
+       background-repeat: no-repeat;
        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
        transition: width 2s, height 2s;
+       display:block;
 
    }
+
+   input:checked + .redbox{width:300px;}
+
 
    div.redbox:hover {
        width: 500px;
@@ -70,7 +78,7 @@
 
     <div id="header">
     <header>
-    <a href="exileDB.html"><img src="My-BUILD.-whitepng.png" width="400" height="100"></a>
+    <a href="exileDB.html"><img src="images/myBuildW.png" width="400" height="100"></a>
     </header>
     </div>
 
@@ -80,15 +88,14 @@
       <li> <a class="active" href="exileDB.html"> Home </a> </li>
       <li> <a href="exilebuild.html" title = "Exile's current build!"> Exile's Build </a> </li>
       <li> <a href="exilebuild.html" title = "Player Builds"> Player Builds </a> </li>
-      <li style="float:right"> <a class="active" href="https://twitter.com/michaelexile" title = "My Twitter!"><img src="twitterlogo.png" width="14" height="14"> </a> </li>
+      <li style="float:right"> <a class="active" href="https://twitter.com/michaelexile" target="_blank" title = "My Twitter!"><img src="images/twitterlogo.png" width="14" height="14"> </a> </li>
     </ul>
     </div>
 
 
-    <div class="redbox">
-      [CHEST PIECE PLACEHOLDER]
-    </div>
 
+    <input type="checkbox" id="button">
+    <label class="redbox" for="button"></label>
 
     <footer id="foot01">
 
