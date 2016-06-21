@@ -4,14 +4,22 @@
   <head>
   <style>
 
-  div.redbox {
-       width: 200px;
+
+  input{display:none}
+  .redbox {
+       width: 500px;
        height: 200px;
-       background: red;
+       background-image: url("images/MaskRENDER.png"),url("images/gearBG.png");
+       background-size: contain, cover;
+       background-repeat: no-repeat;
        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
        transition: width 2s, height 2s;
+       display:block;
 
    }
+
+   input:checked + .redbox{width:300px;}
+
 
    div.redbox:hover {
        width: 500px;
@@ -85,10 +93,9 @@
     </div>
 
 
-    <div class="redbox">
-      [CHEST PIECE PLACEHOLDER]
-    </div>
 
+    <input type="checkbox" id="button">
+    <label class="redbox" for="button"></label>
 
     <footer id="foot01">
 

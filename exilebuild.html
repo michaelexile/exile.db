@@ -5,128 +5,179 @@
   <style>
 
 
-div.hidden {
+div.hidden
+{
     background-color: #00FF00;
     width: 100px;
     height: 100px;
     overflow: hidden;
 }
 
-   div.redbox {
+
+input {display:none}
+
+
+    .mask
+    {
         width: 190px;
         height: 190px;
+
+        cursor:pointer;
 
         position: relative;
         top: 10px;
         left: 20px;
-
         background-image: url("images/maskRender.png"),url("images/gearBG.png");
         background-size: 190px 140px, cover;
-        background-repeat: no-repeat, no-repeat;
+        background-repeat: no-repeat;
         background-position: center left, right;
-        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-        transition: width 2s;
-        box-shadow: 10px 10px 20px #000;
+        -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+        transition: width .5s;
+        box-shadow: 5px 5px 60px #000;
+        display:block;
+          z-index: 1;
     }
-    div.redbox2 {
+
+     input:checked + .mask {width:500px;}
+
+    .chest
+    {
          width: 190px;
          height: 190px;
 
          position: relative;
          top: 30px;
          left: 20px;
+          cursor:pointer;
 
          background-image: url("images/chestRender.png"),url("images/gearBG.png");
          background-size: 170px 170px, cover;
-         background-repeat: no-repeat, no-repeat;
+         background-repeat: no-repeat;
          background-position: center left, right;
-         -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-         transition: width 2s;
-         box-shadow: 10px 10px 20px #000;
-     }
-     div.redbox3 {
+         -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+         transition: width .5s;
+         box-shadow: 5px 5px 60px #000;
+         display:block;
+    }
+
+     input:checked + .chest {width:500px;}
+
+    .knees
+    {
           width: 190px;
           height: 190px;
 
           position: relative;
           top: 50px;
           left: 20px;
+          cursor:pointer;
 
           background-image: url("images/knee-padsRender.png"),url("images/gearBG.png");
           background-size: 170px 140px, cover;
           background-repeat: no-repeat, no-repeat;
-          background-position: center left, right;
-          -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-          transition: width 2s;
-          box-shadow: 10px 10px 20px #000;
-      }
+          background-position: 20px 20px, right;
+          -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+          transition: width .5s;
+          box-shadow: 5px 5px 60px #000;
+          display:block;
+    }
 
-      div.redbox4 {
+    input:checked + .knees {width:500px;}
+
+    .backpack
+    {
            width: 190px;
            height: 190px;
 
            position: relative;
            top: -560px;
            left: 600px;
+            cursor:pointer;
 
            background-image: url("images/backpackRender.png"),url("images/gearBG.png");
            background-size: 190px 140px, cover;
            background-repeat: no-repeat, no-repeat;
-           background-position: center left, right;
-           -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-           transition: width 2s;
-           box-shadow: 10px 10px 20px #000;
-       }
-       div.redbox5 {
+           background-position: -20px 20px, right;
+           -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+           transition: width .5s;
+           box-shadow: 5px 5px 60px #000;
+           display:block;
+    }
+    input:checked + .backpack {width:500px;}
+
+
+    .gloves
+    {
             width: 190px;
             height: 190px;
 
             position: relative;
             top: -540px;
             left: 600px;
+            cursor:pointer;
 
             background-image: url("images/glovesRender.png"),url("images/gearBG.png");
             background-size: 180px 150px, cover;
             background-repeat: no-repeat, no-repeat;
             background-position: center left, right;
-            -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-            transition: width 2s;
-            box-shadow: 10px 10px 20px #000;
-        }
-        div.redbox6 {
+            -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+            transition: width .5s;
+            box-shadow: 5px 5px 60px #000;
+            display:block;
+    }
+
+    input:checked + .gloves {width:500px;}
+
+    .holster
+    {
              width: 190px;
              height: 190px;
 
              position: relative;
              top: -520px;
              left: 600px;
+               cursor:pointer;
 
-             background-image: url("images/holsterRender.png"),url("images/gearBG.png");
-             background-size: 150px 140px, cover;
-             background-repeat: no-repeat, no-repeat;
-             background-position: center left, right;
-             -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-             transition: width 2s;
-             box-shadow: 10px 10px 20px #000;
-         }
-   div.redbox:hover {
-       width: 500px;
-   }
-   div.redbox2:hover {
-       width: 500px;
-   }
-   div.redbox3:hover {
-       width: 500px;
-   }
-   div.redbox4:hover {
-       width: 500px;
-   }
-   div.redbox5:hover {
-       width: 500px;
-   }
-   div.redbox6:hover {
-       width: 500px;
-   }
+             background-image:url("images/holsterRender.png"),url("images/gearBG.png");
+             background-size:150px 140px, cover;
+             background-repeat: no-repeat;
+             background-position: 20px 20px, right;
+
+             -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+             transition: width .5s;
+             box-shadow: 5px 5px 60px #000;
+             display:block;
+    }
+
+    input:checked + .holster {width:500px;}
+
+
+    .firearms
+    {
+            width: 60px;
+            height: 60px;
+
+            cursor:pointer;
+
+            position: relative;
+            top: -1000px;
+            left: 230px;
+            background-image: url("images/firearms.png"),url("images/statBG.png");
+            background-size: 40px 40px, cover;
+            background-repeat: no-repeat;
+            background-position: 10px 10px, right;
+            -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+            transition: width .5s;
+            box-shadow: 5px 5px 60px #000;
+            display:block;
+
+            z-index: 0;
+
+    }
+
+    input:checked + .firearms {width:500px;}
+
+
 
 
 
@@ -177,40 +228,46 @@ li a:hover:not(.active)
 
   <body style="background-color:#262626">
 
-    <div id="header">
+  <div id="header">
     <header>
-    <a href="exileDB.html"> <img src="images\myBuildW.png" width="400" height="100"> </a>
+    <a href="exileDB.html"> <img src="images/myBuildW.png" alt="banner" width="400" height="100"> </a>
     </header>
-    </div>
+  </div>
 
-    <div id="nav">
+  <div id="nav">
     <ul>
       <li> <a href="exileDB.html"> Home </a> </li>
       <li> <a class="active" href="exilebuild.html" title = "Exile's current build!"> Exile's Build </a> </li>
       <li> <a href="exilebuild.html" title = "Player builds"> Player Builds </a> </li>
-       <li style="float:right"> <a class="active" href="https://twitter.com/michaelexile" target="_blank" title = "My Twitter!"><img src="images/twitterlogo.png" width="14" height="14" > </a> </li>
+       <li style="float:right"> <a class="active" href="https://twitter.com/michaelexile" target="_blank" title = "My Twitter!"><img src="images/twitterlogo.png" alt="Twitter" width="14" height="14"> </a> </li>
     </ul>
-    <div>
+  </div>
 
-      <div class="redbox">
-        [MASK PLACEHOLDER]
-      </div>
 
-      <div class="redbox2">
-        [CHEST PIECE PLACEHOLDER]
-      </div>
-      <div class="redbox3">
-        [KNEE PADS PLACEHOLDER]
-      </div>
-      <div class="redbox4">
-        [BACKPACK PLACEHOLDER]
-      </div>
-      <div class="redbox5">
-        [GLOVES PLACEHOLDER]
-      </div>
-      <div class="redbox6">
-        [HOLSTER PLACEHOLDER]
-      </div>
+
+<input type="checkbox" id="button">
+<label class="mask" for="button"> [MASK PLACEHOLDER] </label>
+
+
+<input type="checkbox" id="button2">
+<label class="chest" for="button2"> [CHEST PIECE PLACEHOLDER] </label>
+
+<input type="checkbox" id="button3">
+<label class="knees" for="button3"> [KNEE PADS PLACEHOLDER] </label>
+
+<input type="checkbox" id="button4">
+<label class="backpack" for="button4"> [BACKPACK PLACEHOLDER]    </label>
+
+<input type="checkbox" id="button5">
+<label class="gloves" for="button5"> [GLOVES PLACEHOLDER]    </label>
+
+<input type="checkbox" id="button6">
+<label class="holster" for="button6"> [HOLSTER PLACEHOLDER]    </label>
+
+<input type="checkbox" id="button7">
+<label class="firearms" for="button7"> </label>
+
+
 
 
 
