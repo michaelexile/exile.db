@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <style>
+
+  div.redbox {
+       width: 200px;
+       height: 200px;
+       background: red;
+       -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+       transition: width 2s, height 2s;
+
+   }
+
+   div.redbox:hover {
+       width: 500px;
+       height: 500px;
+   }
+
+
+  #nav div:hover
+  {
+      width: 300px;
+  }
+
+  #nav ul
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px dotted #111;
+  }
+
+  #nav li
+  {
+    float: left;
+  }
+
+  #nav li a
+  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  #nav li a:hover:not(.active)
+  {
+    background-color: #1a1a1a;
+  }
+
+  #nav li a.active
+  {
+    background-color: #FF6A13;
+  }
+
+
+  </style>
+
+
+    <title>Exile.DB</title>
+  </head>
+
+  <body style="background-color:#262626">
+
+    <div id="header">
+    <header>
+    <a href="exileDB.html"><img src="images/myBuildW.png" width="400" height="100"></a>
+    </header>
+    </div>
+
+
+    <div id="nav">
+    <ul>
+      <li> <a class="active" href="exileDB.html"> Home </a> </li>
+      <li> <a href="exilebuild.html" title = "Exile's current build!"> Exile's Build </a> </li>
+      <li> <a href="exilebuild.html" title = "Player Builds"> Player Builds </a> </li>
+      <li style="float:right"> <a class="active" href="https://twitter.com/michaelexile" target="_blank" title = "My Twitter!"><img src="images/twitterlogo.png" width="14" height="14"> </a> </li>
+    </ul>
+    </div>
+
+
+    <div class="redbox">
+      [CHEST PIECE PLACEHOLDER]
+    </div>
+
+
+    <footer id="foot01">
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+
+  </html>
